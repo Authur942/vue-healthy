@@ -30,8 +30,7 @@ export default {
     color #ffffff
     .header-left
       float left
-      width 7rem
-      margin-right 5rem
+      width 30%
       .header-logo
         font-size 1.2rem
         color #ffffff
@@ -39,19 +38,14 @@ export default {
         .header-desc
           font-size .3rem
     .list-item
-      flex 1
-      height 1.2rem
-      // line-height 1.2rem
       display inline-block
       font-size .37rem
       color #ffffff
-      margin 0 .4rem
+      margin 0 .5rem
     .header-right
-      margin-left 1.5rem
+      flex 1
       float right
-      width 1rem
       text-align center
-      // line-height 1.2rem
       .address-icon
         font-size .55rem
 </style>
