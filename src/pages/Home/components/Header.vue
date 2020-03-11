@@ -10,7 +10,9 @@
         <li class="list-item">疫情防控</li>
         <li class="list-item">全国医疗</li>
         <li class="list-item">医学案例</li>
-        <li class="list-item">加入我们</li>
+        <router-link to="/admin">
+          <li class="list-item">加入我们</li>
+        </router-link>
       </ul>
     <div class="header-right">
       <span class="iconfont address-icon">&#xe76b;</span>
