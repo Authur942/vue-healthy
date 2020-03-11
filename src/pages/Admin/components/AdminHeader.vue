@@ -8,22 +8,28 @@
         @select="handleSelect"
         background-color="#545c64"
         text-color="#fff"
-        active-text-color="#ffd04b">
-        <el-menu-item index="1">电子健康档案管理系统</el-menu-item>
+        active-text-color="#409EFF">
+        <el-menu-item index="1" class="title">电子健康档案管理系统</el-menu-item>
         <el-submenu index="2">
-          <template slot="title">我的工作台</template>
-            <el-menu-item index="2-1">选项1</el-menu-item>
-            <el-menu-item index="2-2">选项2</el-menu-item>
-            <el-menu-item index="2-3">选项3</el-menu-item>
-              <el-submenu index="2-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="2-4-1">选项1</el-menu-item>
-                <el-menu-item index="2-4-2">选项2</el-menu-item>
-                <el-menu-item index="2-4-3">选项3</el-menu-item>
-              </el-submenu>
+          <template slot="title">处理中心</template>
+          <el-menu-item index="2-1">选项1</el-menu-item>
+          <el-menu-item index="2-2">选项2</el-menu-item>
+          <el-menu-item index="2-3">选项3</el-menu-item>
+            <el-submenu index="2-4">
+              <template slot="title">选项4</template>
+              <el-menu-item index="2-4-1">选项1</el-menu-item>
+              <el-menu-item index="2-4-2">选项2</el-menu-item>
+              <el-menu-item index="2-4-3">选项3</el-menu-item>
             </el-submenu>
-        <el-menu-item index="3">消息中心</el-menu-item>
-        <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+          </el-submenu>
+          <el-menu-item index="3">消息中心</el-menu-item>
+          <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+          <el-submenu index="5" class="right">
+            <template slot="title"><i class="el-icon-user" style="font-size:30px;color:#fff"></i></template>
+              <el-menu-item index="5-1">张港滨&lt;1738238581@qq.com&gt;</el-menu-item>
+              <el-menu-item index="5-2">注销</el-menu-item>
+              <el-menu-item index="5-3">退出</el-menu-item>
+          </el-submenu>
       </el-menu>
     </el-header>
   </el-container>
@@ -47,4 +53,8 @@ export default {
 <style lang="stylus" scoped>
   .header
     padding 0 0
+    .title
+      font-size 20px
+    .right
+      float right
 </style>
