@@ -1,15 +1,18 @@
 <template>
   <div>
     <admin-header></admin-header>
+    <admin-aside></admin-aside>
   </div>
 </template>
 
 <script>
-import AdminHeader from './components/AdminHeader.vue'
+import AdminHeader from './components/Header.vue'
+import AdminAside from './components/Aside.vue'
 export default {
   name: 'admin',
   components: {
-    AdminHeader
+    AdminHeader,
+    AdminAside
   }
 }
 </script>
