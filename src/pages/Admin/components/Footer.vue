@@ -1,5 +1,9 @@
 <template>
-    <el-footer class="footer">footer</el-footer>
+    <el-footer class="footer" height="20px">
+      <el-row>
+        <el-col :span="24" style="font-size:11px;color:#fff">&#169;&nbsp;&nbsp;&nbsp;AUTHUR MAX&nbsp;,&nbsp;powered&nbsp;by&nbsp;ELEMENT-UI&nbsp;and&nbsp;Vue.</el-col>
+      </el-row>
+    </el-footer>
 </template>
 <script>
 export default {
@@ -9,4 +13,8 @@ export default {
 <style lang="stylus" scoped>
   .footer
     padding 0 0
+    background #303133
+    .el-row
+      text-align center
+      line-height 20px
 </style>

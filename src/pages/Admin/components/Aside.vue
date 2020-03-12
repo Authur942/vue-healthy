@@ -1,13 +1,13 @@
 <template>
-    <el-aside width="240px">
+    <el-aside width="257px">
       <el-menu
         default-active="2"
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
-        background-color="#545c64"
+        background-color="#303133"
         text-color="#fff"
-        active-text-color="#ffd04b"
+        active-text-color="#04B404"
       >
         <!-- 社区管理 -->
         <el-submenu index="1">
@@ -36,12 +36,12 @@
             <span>儿童保健管理</span>
           </template>
             <el-menu-item index="2-1">新生儿建档</el-menu-item>
-            <el-menu-item index="2-1">婴儿科</el-menu-item>
-            <el-menu-item index="2-2">儿童科</el-menu-item>
-            <el-menu-item index="2-3">信息管理</el-menu-item>
-          <el-submenu index="2-4">
+            <el-menu-item index="2-2">婴儿科</el-menu-item>
+            <el-menu-item index="2-3">儿童科</el-menu-item>
+            <el-menu-item index="2-4">信息管理</el-menu-item>
+          <el-submenu index="2-5">
             <template slot="title">选项4</template>
-            <el-menu-item index="2-4-1">选项1</el-menu-item>
+            <el-menu-item index="2-5-1">选项1</el-menu-item>
           </el-submenu>
         </el-submenu>
         <!-- 妇女保健 -->
@@ -104,5 +104,5 @@ export default {
 </script>
 <style lang="stylus" scoped>
   .el-menu-vertical-demo
-    height 610px
+    height 650px
 </style>
