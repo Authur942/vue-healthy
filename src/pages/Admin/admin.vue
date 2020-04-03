@@ -1,11 +1,11 @@
 <template>
-    <el-container direction="vertical">
-      <admin-header></admin-header>
-      <el-container>
-        <admin-aside></admin-aside>
+    <el-container>
+      <admin-aside></admin-aside>
+      <el-container direction="vertical">
+        <admin-header></admin-header>
         <admin-main></admin-main>
+        <admin-footer></admin-footer>
       </el-container>
-      <admin-footer></admin-footer>
     </el-container>
 </template>
 

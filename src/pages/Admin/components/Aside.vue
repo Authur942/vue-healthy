@@ -9,6 +9,8 @@
         text-color="#fff"
         active-text-color="#04B404"
       >
+        <!-- logo -->
+          <div class="title-logo">电子健康档案管理系统</div>
         <!-- 社区管理 -->
         <el-submenu index="1">
           <template slot="title">
@@ -104,5 +106,11 @@ export default {
 </script>
 <style lang="stylus" scoped>
   .el-menu-vertical-demo
-    height 650px
+    height 730px
+    .title-logo
+      font-size 20px
+      color #fff
+      line-height 60px
+      background #04B404
+      text-align center
 </style>
