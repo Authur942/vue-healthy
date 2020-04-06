@@ -8,16 +8,11 @@
             background-color="#303133"
             text-color="#fff"
             active-text-color="#04B404">
-            <el-menu-item index="1">主页</el-menu-item>
+            <el-menu-item index="1">近期更新档案</el-menu-item>
             <el-submenu index="2">
               <template slot="title">疾控中心</template>
               <el-menu-item index="2-1">病例建档</el-menu-item>
               <el-menu-item index="2-2">病例查询</el-menu-item>
-                <el-submenu index="2-3">
-                  <template slot="title">疫情防控</template>
-                  <el-menu-item index="2-4-1">疑似群体</el-menu-item>
-                  <el-menu-item index="2-4-2">确诊群体</el-menu-item>
-                </el-submenu>
               </el-submenu>
                 <el-submenu index="3">
                   <template slot="title">处理中心</template>
@@ -38,7 +33,7 @@
                       <el-badge :value="100" :max="99" type="primary" style="margin-left:10px;"/>
                   </el-menu-item>
                 </el-submenu>
-              <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">数据统计</a></el-menu-item>
+              <el-menu-item index="4"><router-link to="/map">疫情地图</router-link></el-menu-item>
               <el-submenu index="5" class="right">
                 <template slot="title"><el-avatar> user </el-avatar></template>
                   <el-menu-item index="5-1">管理员&lt;1738238581@qq.com&gt;</el-menu-item>

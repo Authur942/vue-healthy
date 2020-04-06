@@ -1,7 +1,7 @@
 <template>
     <el-footer class="footer" height="20px">
       <el-row>
-        <el-col :span="24" style="font-size:11px;color:#fff">&#169;&nbsp;&nbsp;&nbsp;AUTHUR MAX&nbsp;,&nbsp;powered&nbsp;by&nbsp;ELEMENT-UI&nbsp;and&nbsp;Vue.</el-col>
+        <el-col :span="24" style="font-size:11px;color:#fff">&nbsp;中大南方医院&nbsp;&#169;&nbsp;版权所有&nbsp;Include&nbsp;AUTHUR MAX&nbsp;,&nbsp;powered&nbsp;by&nbsp;ELEMENT-UI&nbsp;and&nbsp;Vue.</el-col>
       </el-row>
     </el-footer>
 </template>

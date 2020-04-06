@@ -1,5 +1,5 @@
 <template>
-    <el-aside width="257px">
+    <el-aside width="257px" class="aside-box">
       <el-menu
         default-active="2"
         class="el-menu-vertical-demo"
@@ -10,7 +10,7 @@
         active-text-color="#04B404"
       >
         <!-- logo -->
-          <div class="title-logo">电子健康档案管理系统</div>
+        <div class="title-logo">电子健康档案管理系统</div>
         <!-- 社区管理 -->
         <el-submenu index="1">
           <template slot="title">
@@ -105,12 +105,21 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-  .el-menu-vertical-demo
-    height 730px
-    .title-logo
-      font-size 20px
-      color #fff
-      line-height 60px
-      background #04B404
-      text-align center
+.aside-box::-webkit-scrollbar 
+    width 0px
+    /* 滚动条的滑块 */
+// .aside-box::-webkit-scrollbar-thumb
+//     background-color #a1a3a9
+//     border-radius 10px
+// .aside-box::-webkit-scrollbar-track 
+//     border-radius 0px /*滚动条的背景区域的圆角*/
+//     background-color #303133 /*滚动条的背景颜色*/
+.el-menu-vertical-demo
+  height 730px
+  .title-logo
+    font-size 20px
+    color #fff
+    line-height 60px
+    background #04B404
+    text-align center
 </style>
