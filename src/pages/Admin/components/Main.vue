@@ -26,18 +26,26 @@
         </el-table-column>
         <el-table-column prop="address" label="地址" width="210">
         </el-table-column>
-        <el-table-column label="操作" width="160" fixed="right">
+        <el-table-column label="操作" width="190" fixed="right">
           <template slot-scope="scope">
             <el-button
               size="mini"
-              @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+              type="info"
+              icon="el-icon-search"></el-button>
+            <el-button
+              size="mini"
+              type="primary"
+              icon="el-icon-edit"
+              @click="handleEdit(scope.$index, scope.row)" ></el-button>
             <el-button
               size="mini"
               type="danger"
-              @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+              icon="el-icon-delete"
+              @click="handleDelete(scope.$index, scope.row)"></el-button>
           </template>
         </el-table-column>
       </el-table>
+      <!-- table底部分页 -->
       <div class="block">
         <el-pagination
           @size-change="handleSizeChange"
@@ -79,7 +87,7 @@ export default {
             message: '已取消删除'
           });
         });
-      },
+      }
     },
   data () {
     return {
