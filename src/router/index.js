@@ -4,6 +4,7 @@ import Home from '@/pages/Home/home.vue'
 import Admin from '@/pages/Admin/admin.vue'
 import Login from '@/pages/Login/login.vue'
 import Map from '@/pages/Map/map.vue'
+import Newbuild from '@/pages/Newbuild/newbuild.vue'
 
 Vue.use(Router)
 
@@ -20,5 +21,9 @@ export default new Router({
     path: '/map',
     name: 'Map',
     component: Map
+  }, {
+    path: '/Newbuild',
+    name: 'Newbuild',
+    component: Newbuild
   }]
 })

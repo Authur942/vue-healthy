@@ -11,7 +11,7 @@
         <el-menu-item index="1">近期更新档案</el-menu-item>
         <el-submenu index="2">
           <template slot="title">疾控中心</template>
-          <el-menu-item index="2-1" @click="dialogVisible = true">病例建档</el-menu-item>
+          <router-link to="/Newbuild"><el-menu-item index="2-1">病例建档</el-menu-item></router-link>
           <el-menu-item index="2-2">病例查询</el-menu-item>
           </el-submenu>
             <el-submenu index="3">
