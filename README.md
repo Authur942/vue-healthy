@@ -20,7 +20,8 @@ npm run build --report
 
 **技术栈**：Vue + router + axios + ElementUI
 
-**目录**
+### 目录结构
+```
 vue-healthy
 ├── build
 │   ├── build.js
@@ -48,3 +49,4 @@ vue-healthy
 ├── static
 │   └── moke
 └── tree.md
+```
