@@ -1,13 +1,14 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <div class="iconfont header-logo">众志成城 抗击疫情</div>
+      <div class="iconfont header-logo">电子健康档案管理系统</div>
     </div>
       <ul>
-        <router-link to="/admin"><li class="list-item">返回</li></router-link>
+        <router-link to="/admin"><li class="list-item">返回后台</li></router-link>
         <li class="list-item">疫情地图</li>
         <li class="list-item">疫情动态</li>
-        <!-- <li class="list-item">加入我们</li> -->
+        <li class="list-item">防控进度</li>
+        <li class="list-item">最新报道</li>
       </ul>
   </div>
 </template>
@@ -21,7 +22,7 @@ export default {
     // width 100%
     display flex
     line-height 1.2rem
-    background #606266
+    background #B22222
     color #ffffff
     margin-bottom 20px
     // position fixed
